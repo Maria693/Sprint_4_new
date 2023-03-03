@@ -108,7 +108,6 @@ public class OrderPage {
     public void clickConfirmButton() {
         driver.findElement(confirmButton).click();
     }
-
     public void checkOrderModalDisplayed() {
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOf(driver.findElement(orderModalContainer)));
